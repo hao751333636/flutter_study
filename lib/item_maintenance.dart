@@ -21,53 +21,55 @@ class _Item extends State<ItemMaintenance> {
           borderRadius: new BorderRadius.all(new Radius.circular(5)),
         ),
         child: new Padding(
-            padding:
-            new EdgeInsets.only(left: 20, top: 10, right: 20, bottom: 10),
-            child: new Column(
-              children: <Widget>[
-                new Row(
+          padding:
+              new EdgeInsets.only(left: 20, top: 10, right: 20, bottom: 10),
+          child: new Column(
+            children: <Widget>[
+              new Row(
+                children: <Widget>[
+                  new Padding(
+                    padding: EdgeInsets.only(top: 15),
+                    child: new Text(
+                      "电梯注册代码",
+                      textDirection: TextDirection.ltr,
+                      style: new TextStyle(color: Colors.white),
+                    ),
+                  ),
+                  new Padding(
+                    padding: EdgeInsets.only(left: 20, top: 15),
+                    child: new Text(
+                      "12345678901234567890",
+                      textDirection: TextDirection.rtl,
+                      style: new TextStyle(color: Colors.white),
+                    ),
+                  )
+                ],
+              ),
+              new Padding(
+                padding: EdgeInsets.only(top: 25),
+                child: new Row(
                   children: <Widget>[
-                    new Padding(
-                      padding: EdgeInsets.only(top: 15),
-                      child: new Text(
-                        "电梯注册代码",
-                        textDirection: TextDirection.ltr,
-                        style: new TextStyle(color: Colors.white),
-                      ),
+                    new Image(
+                      image: new AssetImage(
+                          'lib/assets/images/ic_ele_complete.png'),
+                      width: 50,
+                      height: 50,
                     ),
                     new Padding(
-                      padding: EdgeInsets.only(left: 20, top: 15),
-                      child: new Text(
-                        "12345678901234567890",
-                        textDirection: TextDirection.rtl,
-                        style: new TextStyle(color: Colors.white),
-                      ),
-                    )
-                  ],
-                ),
-                new Padding(
-                  padding: EdgeInsets.only(top: 25),
-                  child: new Row(
-                    children: <Widget>[
-                      new Image(
-                        image: new AssetImage(
-                            'lib/assets/images/ic_ele_complete.png'),
-                        width: 50,
+                      padding: EdgeInsets.only(left: 15),
+                      child: new Container(
                         height: 50,
-                      ),
-                      new Padding(
-                        padding: EdgeInsets.only(left: 15),
-                        child: new Container(
-                          height: 50,
-                          child: new VerticalDivider(
-                            width: 10,
-                            color: Colors.white,
-                          ),
+                        child: new VerticalDivider(
+                          width: 10,
+                          color: Colors.white,
                         ),
                       ),
-                      new Padding(
+                    ),
+                    new Expanded(
+                      child: Padding(
                         padding: EdgeInsets.only(left: 15),
                         child: new Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
                             new Text(
                               "维修创建时间:2019-01-26 15:42:47",
@@ -84,12 +86,30 @@ class _Item extends State<ItemMaintenance> {
                                 maxLines: 2)
                           ],
                         ),
-                      )
-                    ],
-                  ),
-                )
-              ],
-            )),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              new Padding(
+                padding: EdgeInsets.only(top: 10),
+                child: new Row(
+                  children: <Widget>[
+                    new Icon(
+                      Icons.add_location,
+                      color: Colors.white,
+                    ),
+                    new Text(
+                      "什么路什么号",
+                      style: new TextStyle(color: Color(0x60ffffff)),
+                      textDirection: TextDirection.ltr,
+                    )
+                  ],
+                ),
+              )
+            ],
+          ),
+        ),
       ),
     );
   }
