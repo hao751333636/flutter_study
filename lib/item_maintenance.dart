@@ -95,14 +95,19 @@ class _Item extends State<ItemMaintenance> {
                 padding: EdgeInsets.only(top: 10),
                 child: new Row(
                   children: <Widget>[
-                    new Icon(
-                      Icons.add_location,
-                      color: Colors.white,
+                    new Image(
+                      image:
+                          new AssetImage("lib/assets/images/ic_location.png"),
+                      width: 15,
+                      height: 25,
                     ),
-                    new Text(
-                      "什么路什么号",
-                      style: new TextStyle(color: Color(0x60ffffff)),
-                      textDirection: TextDirection.ltr,
+                    new Padding(
+                      padding: EdgeInsets.only(left: 15),
+                      child: new Text(
+                        "什么路什么号",
+                        style: new TextStyle(color: Color(0x60ffffff)),
+                        textDirection: TextDirection.ltr,
+                      ),
                     )
                   ],
                 ),

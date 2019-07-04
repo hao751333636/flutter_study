@@ -15,6 +15,18 @@ class _MaintenanceState extends State<MaintenanceList> {
         appBar: new AppBar(
           title: new Text("维修工单"),
           centerTitle: true,
+          actions: <Widget>[
+            new Container(
+                    child: new FlatButton(
+                      onPressed: (){},
+                      child: new Text(
+                        "添加工单",
+                        style: TextStyle(color: Colors.white),
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                alignment: Alignment.center)
+          ],
           backgroundColor: Color(0xff272935),
         ),
         body: new Container(

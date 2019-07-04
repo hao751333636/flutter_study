@@ -42,6 +42,7 @@ flutter:
 
   assets:
     - lib/assets/images/ic_ele_complete.png
+    - lib/assets/images/ic_location.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:
